@@ -331,7 +331,7 @@ main
 
 @media screen and (max-width: 500px) {
   body{
-    height: 80vh;
+    height: 79.5vh;
   }
 
   .hanging-board {
@@ -396,7 +396,7 @@ main
   .container5 {
     width: 45%;
     padding: 8px 15px;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .container5 h4 {
