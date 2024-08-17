@@ -19,6 +19,11 @@ a {
   text-decoration: none;
 }
 
+main
+{
+  flex-direction: column;
+}
+
 .container {
   margin-top: 20px;
   height: 20vh;
@@ -325,9 +330,8 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .body
-  {
-    height: 95vh;
+  main{
+    flex-direction: column;
   }
 
   .hanging-board {
