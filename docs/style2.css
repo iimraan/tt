@@ -330,10 +330,6 @@ main
 }
 
 @media screen and (max-width: 500px) {
-  main{
-    flex-direction: column;
-  }
-
   .hanging-board {
     width: 70%;
     font-size: 15px;
@@ -361,12 +357,13 @@ main
   }
   .container {
     margin-top: 20px;
-    height: 10vh;
+    height: 5vh;
   }
 
   .ov-game {
-    height: 50vh;
-    margin-top: 10px;
+    height: 70vh;
+    /* margin-top: 10px; */
+    gap: 10px ;
   }
 
   .container2 {
