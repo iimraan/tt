@@ -63,7 +63,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 A React-based signup form UI project.
 
-![Signup Form UI](preview/form.png)
+![Signup Form UI](preview/form.jpg)
 
 
 ### Deployment
