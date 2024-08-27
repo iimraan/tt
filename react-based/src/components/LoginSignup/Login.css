@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Serif";
+}
+
+body {
+  background-image: url("../assets/back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+.form-container {
+  display: flex;
+  width: 900px;
+  height: 520px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+}
+
+.col-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  background: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  border-radius: 27px 30% 20% 27px;
+  transition: border-radius 0.3s;
+}
+
+.image-layer {
+  position: relative;
+}
+
+.form-img-main {
+  width: 300px;
+  animation: scale-up 3s ease-in-out alternate infinite;
+}
+
+.coin,
+.spring,
+.stars {
+  animation: scale-down 3s ease-in-out alternate infinite;
+}
+
+.dots {
+  animation: scale-up 3s ease-in-out alternate infinite;
+}
+
+.rocket {
+  animation: up-down 3s ease-in-out alternate infinite;
+}
+
+.cloud {
+  animation: left-right 3s ease-in-out alternate infinite;
+}
+
+@keyframes left-right {
+  to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes up-down {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes scale-down {
+  to {
+    transform: scale(0.95);
+  }
+}
+
+@keyframes scale-up {
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.form-img {
+  position: absolute;
+  left: 0;
+  width: 300px;
+}
+
+.col-2 {
+  position: relative;
+  width: 50%;
+  padding: 15px;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.btn {
+  font-weight: 500;
+  padding: 8px 22px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 12px;
+  background: rgb(255, 255, 255, 0.3);
+  color: white;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.login-form {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 4.5vw;
+  transition: 0.3s;
+}
+
+.shift-right {
+  transform: translateX(0);
+  transition: transform 0.4s ease;
+}
+
+.shift-left {
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  border-radius: 30% 27px 27px 20%;
+}
+
+.register-form {
+  position: absolute;
+  left: -50%;
+  bottom: 9%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 4.5vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.register-form .form-title {
+  margin-block: 40px 30px;
+}
+
+.register-form .input-submit {
+  margin: 10px 0 -7px 0;
+}
+
+.form-title {
+  margin: 40px 0 25px 0;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.form-inputs {
+  width: 100%;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-field {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  margin: 8px 0;
+  color: white;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+::placeholder {
+  color: white;
+  font-size: 15px;
+}
+
+.input-box .icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.forgot-pass {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+}
+
+.forgot-pass a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-pass a:hover {
+  text-decoration: underline;
+}
+
+.input-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  gap: 10px;
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  margin: 30px 0 8px 0;
+  color: white;
+  background: #1665db;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-submit:hover {
+  gap: 15px;
+}
+
+.social-login {
+  margin: 5px 0 15px 0;
+}
+
+.social-login i {
+  border-radius: 30%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.3);
+  transition: 0.2s;
+}
+
+.social-login i:hover {
+  transform: scale(0.9);
+}
+
+.color {
+  background: #1665db;
+}
